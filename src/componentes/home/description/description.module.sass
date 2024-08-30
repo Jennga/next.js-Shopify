@@ -1,0 +1,32 @@
+@import "_variables.sass"
+
+.Description
+    margin: 0
+
+.imageSmall     
+    position: relative
+    width: 450px 
+    height: 100px
+    & > img
+        border-radius: $border-radius
+        box-shadow: $sombra
+        //overflow: hidden    // Asegura que el borde redondeado se aplique correctamente
+        object-fit: cover //  se utiliza para especificar cómo se debe ajustar una imagen
+
+.Des
+    width: 60%
+    margin: 20px auto
+    display: flex
+    justify-content: space-between
+
+.Des2
+    padding: 8px
+    color: $text-colorclaro
+
+.Des2h2 
+    color: $fondo2
+    text-align: center
+    text-shadow: $contornoletra2
+    font-size: 2rem
+    padding: 0
+    margin: 0

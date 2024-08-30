@@ -1,0 +1,27 @@
+import styles from './description.module.sass';
+import Image from 'next/image';
+
+const PLACEHOLDER_IMAGE = 'data:image/jpeg;base64,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';
+
+export const Description = () => {
+
+    return(
+        <section className={styles.Description}>
+            <div className={styles.Des}>
+                <div className={styles.imageSmall}>
+                    <Image 
+                         src="/images/coponieve.jpeg" 
+                         alt="imagen de ejemplo"
+                         fill
+                         placeholder='blur'
+                         blurDataURL={PLACEHOLDER_IMAGE}       
+                    />
+                </div>
+                <div className={styles.Des2}>
+                    <h2 className={styles.Des2h2}>Descripcion</h2>
+                    Aquí escribiremos cosas de la tienda
+                </div>
+            </div>
+        </section>
+    )
+}
